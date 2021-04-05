@@ -34,11 +34,11 @@ resize.addEventListener('click', () => {
     boxs.forEach(box => box.style.background = `rgb(255,255,255)`);
     let input = prompt('Size');
     if (input > 0 && input < 100) {
-        container.innerHTML = '';
+        container.textContent = '';
         makeRows(input, input);
         colorTransform();
     } else {
-        container.innerHTML = '';
+        container.textContent = '';
         makeRows(16, 16);
     }
 })
